@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <img src="img/01.png" alt="Banner de Cybersegurança" class="banner">
+        <img src="img/05.png" alt="Logo Marca" class="logo">
+        <h1>Mundo da Cybersegurança</h1>
+
+    </header>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="us.html">Equipe</a>
+        <a href="cont.html">Contato</a>
+        <button class="menu-button" onclick="toggleSidebar()">&#9776;</button>
+    </nav>
+    <div class="main-content">
+        <div class="sidebar" id="sidebar">
+            <a href="dire.html" class="sidebar-button">NIST</a>
+            <a href="time.html" class="sidebar-button">Timeline de Crimes</a>
+            <button class="sidebar-button"></button>
+        </div>
+        <div class="content">
+            <h2>Contato</h2>
+            <h3>Deixe sua mensagem! Entraremos em contato o mais rápido possível.</h3>
+            <form action="mailto:gabeziggy@gmail.com" method="post" enctype="text/plain">
+                <label for="name">Nome:</label>
+                <input type="text" id="name" name="name" required>
+                <br>
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                <br>
+                <label for="comment">Comentário:</label>
+                <textarea id="comment" name="comment" rows="4" required></textarea>
+                <br>
+                <input type="submit" value="Enviar">
+            </form>
+        </div>
+    </div>
+    <footer>
+        <p>&copy; 2025 Nav Cybersecurity Solutions. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>
