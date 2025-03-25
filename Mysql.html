@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Relatório Técnico: Implementação do Banco de Dados MySQL</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Relatório Técnico: Implementação do Banco de Dados MySQL</h1>
+        </div>
+    </header>
+    
+    <main class="container">
+        <section>
+            <h2>1. Introdução</h2>
+            <p>Este relatório tem como objetivo fornecer um levantamento técnico detalhado sobre a implementação do MySQL, com foco nas melhores práticas para a instalação, configuração e gestão do sistema de gerenciamento de banco de dados. O MySQL é um dos RDBMS (Sistemas de Gerenciamento de Banco de Dados Relacional) mais utilizados no mercado devido à sua alta performance, segurança e natureza open source. A implementação correta deste sistema é essencial para garantir a eficiência, escalabilidade e segurança dos dados.</p>
+        </section>
+
+        <section>
+            <h2>2. Visão Geral do MySQL</h2>
+            <p><strong>O que é MySQL</strong>: MySQL é um sistema de gerenciamento de banco de dados relacional (RDBMS) open-source que utiliza a linguagem SQL para interação com os dados. Ele é amplamente utilizado devido à sua estabilidade, desempenho e facilidade de integração com outras tecnologias.</p>
+            <p><strong>Características Principais</strong>:</p>
+            <ul>
+                <li><strong>Desempenho:</strong> Processamento rápido de consultas com uma arquitetura otimizada.</li>
+                <li><strong>Escalabilidade:</strong> Suporta grandes volumes de dados e usuários simultâneos.</li>
+                <li><strong>Alta Disponibilidade:</strong> Suporte a configurações de replicação e clusters.</li>
+                <li><strong>Segurança:</strong> Recursos robustos para controle de acesso e criptografia.</li>
+                <li><strong>Open Source:</strong> Código aberto, com uma grande comunidade de suporte.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>3. Melhores Práticas para Instalação</h2>
+            <h3>3.1 Pré-requisitos</h3>
+            <p><strong>Hardware:</strong> Certifique-se de que o servidor possui recursos suficientes (CPU, memória RAM e espaço em disco) para suportar a carga de trabalho.</p>
+            <p><strong>Sistema Operacional:</strong> MySQL pode ser instalado em sistemas Linux (Ubuntu, CentOS), Windows e macOS. A maioria das implementações em produção ocorre em sistemas Linux devido à sua performance e estabilidade.</p>
+
+            <h3>3.2 Etapas de Instalação</h3>
+            <p><strong>No Linux (Ubuntu/Debian):</strong></p>
+            <pre>
+sudo apt update
+sudo apt upgrade
+sudo apt install mysql-server
+sudo systemctl status mysql
+            </pre>
+
+            <p><strong>No Windows:</strong></p>
+            <ul>
+                <li>Baixe o instalador do MySQL a partir do site oficial.</li>
+                <li>Execute o instalador e siga as instruções para configurar o servidor MySQL.</li>
+                <li>Durante a instalação, defina as opções de segurança e senha do usuário root.</li>
+            </ul>
+
+            <h3>3.3 Configuração Inicial</h3>
+            <ul>
+                <li>Defina uma senha forte para o usuário <code>root</code> durante a instalação.</li>
+                <li>Crie usuários com permissões específicas para as aplicações.</li>
+                <li>Limite o acesso ao MySQL, configurando o arquivo <code>my.cnf</code> para permitir apenas conexões da rede interna.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>4. Melhores Práticas para Configuração</h2>
+            <h3>4.1 Arquivo de Configuração (my.cnf ou my.ini)</h3>
+            <p>Ajuste os parâmetros de desempenho no arquivo de configuração, como <code>innodb_buffer_pool_size</code>, <code>query_cache_size</code>, <code>max_connections</code>.</p>
+            <pre>
+[mysqld]
+innodb_buffer_pool_size = 2G
+max_connections = 500
+query_cache_size = 64M
+            </pre>
+
+            <h3>4.2 Segurança</h3>
+            <p>Desabilite o acesso remoto ao usuário <code>root</code> e configure SSL para conexões seguras. Exemplo de configuração SSL no arquivo <code>my.cnf</code>:</p>
+            <pre>
+[mysqld]
+ssl-ca=/path/to/ca-cert.pem
+ssl-cert=/path/to/server-cert.pem
+ssl-key=/path/to/server-key.pem
+            </pre>
+
+            <h3>4.3 Controle de Acesso</h3>
+            <p>Utilize a cláusula <code>GRANT</code> para definir permissões detalhadas aos usuários:</p>
+            <pre>
+GRANT SELECT, INSERT ON database_name.* TO 'username'@'host' IDENTIFIED BY 'password';
+            </pre>
+        </section>
+
+        <section>
+            <h2>5. Gestão do Banco de Dados MySQL</h2>
+            <h3>5.1 Backup e Recuperação</h3>
+            <p><strong>Estratégias de Backup:</strong> Realize backups regulares utilizando o <code>mysqldump</code> ou ferramentas como <code>Percona XtraBackup</code>.</p>
+            <pre>
+mysqldump -u root -p --all-databases > backup.sql
+            </pre>
+
+            <p><strong>Recuperação:</strong> Para restaurar um banco de dados a partir de um backup:</p>
+            <pre>
+mysql -u root -p < backup.sql
+            </pre>
+
+            <h3>5.2 Monitoramento e Tuning</h3>
+            <p>Utilize ferramentas como <strong>MySQL Enterprise Monitor</strong> ou <strong>Percona Monitoring and Management (PMM)</strong> para monitorar o desempenho do servidor MySQL.</p>
+
+            <h3>5.3 Replicação e Alta Disponibilidade</h3>
+            <p>Configure a replicação para garantir alta disponibilidade e escalabilidade, utilizando o modelo <strong>Master-Slave</strong> ou <strong>MySQL Cluster</strong>.</p>
+
+            <h3>5.4 Atualizações e Patches</h3>
+            <p>Mantenha o MySQL atualizado e aplique patches conforme necessário.</p>
+        </section>
+
+        <section>
+            <h2>6. Considerações Finais</h2>
+            <p>A implementação e gestão do MySQL exige cuidados especiais em relação à segurança, desempenho e alta disponibilidade. As boas práticas de instalação e configuração não apenas garantem o funcionamento adequado do sistema, mas também oferecem escalabilidade e confiabilidade no longo prazo.</p>
+        </section>
+
+        <section>
+            <h2>7. Referências</h2>
+            <ul>
+                <li><a href="https://dev.mysql.com/doc/" target="_blank">Documentação Oficial MySQL</a></li>
+                <li><a href="https://www.percona.com/software/mysql-database/percona-xtrabackup" target="_blank">Percona XtraBackup</a></li>
+                <li><a href="https://dev.mysql.com/doc/refman/8.0/en/server-system-variables.html" target="_blank">MySQL Performance Tuning</a></li>
+            </ul>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 - Relatório Técnico MySQL. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+</body>
+</html>
