@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Framework de Segurança</title>
+    <link rel="stylesheet" href="maincontant.css">
+    <style>
+        .main-content {
+            padding: 30px;
+            text-align: left;
+            max-width: 1000px;
+            margin: 40px auto;
+            background-color: #ffffff;
+            border-radius: 20px;
+            box-shadow: 0 0 15px rgba(0,0,0,0.1);
+        }
+
+        .main-content h2, .main-content h3 {
+            color: #093b44;
+            margin-bottom: 15px;
+        }
+
+        .main-content ul {
+            padding-left: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+            transition: background-color 0.3s ease;
+        }
+
+        th {
+            background-color: #093b44;
+            color: #fff;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f0f8ff;
+        }
+
+        tr:hover {
+            background-color: #d0e8e8;
+        }
+
+        td:hover {
+            background-color: #c4e3e3;
+        }
+
+        .framework-img {
+            width: 100%;
+            max-height: 300px;
+            object-fit: cover;
+            margin: 20px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img src="img/01.png" alt="Banner de Cybersegurança" class="banner">
+        <img src="img/05.png" alt="Logo Marca" class="logo">
+        <h1>Mundo da Cybersegurança</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="us.html">Equipe</a>
+            <a href="cont.html">Contato</a>
+            <button class="menu-button" onclick="toggleSidebar()">&#9776;</button>
+        </nav>
+    </header>
+
+    <div class="main-content">
+        <h2 class="titulo">Framework Personalizado de Segurança e Governança de TI</h2>
+
+        <img src="img/framework-estrutura.png" alt="Estrutura do Framework" class="framework-img">
+
+        <p><strong>Introdução:</strong><br>
+        Este framework foi desenvolvido com base nas melhores práticas dos frameworks COBIT, ISO/IEC 27001, ISO/IEC 27005 e NIST Cybersecurity Framework, adaptado à realidade da nossa organização.</p>
+
+        <h3>Objetivos:</h3>
+        <ul>
+            <li>Garantir a confidencialidade, integridade e disponibilidade da informação.</li>
+            <li>Alinhar a TI à estratégia do negócio.</li>
+            <li>Gerenciar riscos e garantir conformidade.</li>
+            <li>Promover a melhoria contínua na segurança da informação.</li>
+        </ul>
+
+        <h3>Fundamentos Utilizados:</h3>
+        <p><strong>COBIT:</strong> foco na governança e no alinhamento estratégico da TI.</p>
+        <p><strong>ISO/IEC 27001:</strong> implementação de um SGSI com base em políticas e controles.</p>
+        <p><strong>ISO/IEC 27005:</strong> abordagem sistemática de gestão de riscos em segurança da informação.</p>
+        <p><strong>NIST CSF:</strong> estrutura de segurança baseada em cinco funções: Identificar, Proteger, Detectar, Responder e Recuperar.</p>
+
+        <img src="img/ciclo-seguranca.png" alt="Ciclo de Segurança da Informação" class="framework-img">
+
+        <h3>Estrutura do Framework Personalizado:</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Função</th>
+                    <th>Objetivo</th>
+                    <th>Práticas Adaptadas</th>
+                    <th>Ferramentas/Controles</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Governança</td>
+                    <td>Estabelecer liderança e responsabilidade em segurança</td>
+                    <td>COBIT (EDM), ISO (Política)</td>
+                    <td>Comitê de Segurança, Auditorias</td>
+                </tr>
+                <tr>
+                    <td>Planejamento e Alinhamento</td>
+                    <td>Alinhar TI aos objetivos organizacionais</td>
+                    <td>COBIT (APO), NIST (Identificar)</td>
+                    <td>Plano Estratégico, Inventário de Ativos</td>
+                </tr>
+                <tr>
+                    <td>Gestão de Riscos</td>
+                    <td>Identificar, analisar e tratar riscos</td>
+                    <td>ISO 27005, NIST (Identificar)</td>
+                    <td>Matriz de Risco, Avaliações Periódicas</td>
+                </tr>
+                <tr>
+                    <td>Segurança Operacional</td>
+                    <td>Implementar controles de proteção</td>
+                    <td>ISO (Anexo A), NIST (Proteger)</td>
+                    <td>Controle de Acesso, Backup</td>
+                </tr>
+                <tr>
+                    <td>Monitoramento e Resposta</td>
+                    <td>Detectar e reagir a incidentes</td>
+                    <td>NIST (Detectar, Responder), COBIT (DSS)</td>
+                    <td>SIEM, Plano de Resposta</td>
+                </tr>
+                <tr>
+                    <td>Melhoria Contínua</td>
+                    <td>Aprender com incidentes e evoluir processos</td>
+                    <td>ISO (PDCA), COBIT (MEA)</td>
+                    <td>Indicadores, Auditorias Internas</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>Conclusão:</h3>
+        <p>Este framework proporciona uma base sólida e adaptável para a segurança e governança de TI da organização, promovendo conformidade, desempenho e proteção contínua contra ameaças.</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Nav Cybersecurity Solutions. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
