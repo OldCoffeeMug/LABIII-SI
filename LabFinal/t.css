@@ -1,0 +1,133 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center; /* Alinha o conteúdo da página no centro */
+}
+
+header {
+    position: relative;
+    text-align: right;
+    color: rgba(255, 255, 255, 0);
+    background-color: #000000;
+}
+
+header .banner {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+header .logo {
+    position: absolute; /* Faz a imagem flutuar sobre o banner */
+    top: -50px; /* Distância do topo do banner */
+    left: 20%; /* Centraliza a imagem horizontalmente */
+    transform: translateX(-50%); /* Ajusta o alinhamento exato */
+    width: 600px; /* Define o tamanho menor */
+    height: auto; /* Mantém a proporção */
+}
+
+header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    padding: 0px;
+    margin: 0;
+    font-size: 2.2em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color:body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center; /* Alinha o conteúdo da página no centro */
+}
+
+header {
+    position: relative;
+    text-align: right;
+    color: rgba(255, 255, 255, 0);
+    background-color: #000000;
+}
+
+header .banner {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+header .logo {
+    position: absolute; /* Faz a imagem flutuar sobre o banner */
+    top: -50px; /* Distância do topo do banner */
+    left: 20%; /* Centraliza a imagem horizontalmente */
+    transform: translateX(-50%); /* Ajusta o alinhamento exato */
+    width: 600px; /* Define o tamanho menor */
+    height: auto; /* Mantém a proporção */
+}
+
+header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    padding: 0px;
+    margin: 0;
+    font-size: 2.2em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color:
