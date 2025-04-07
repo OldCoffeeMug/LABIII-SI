@@ -235,3 +235,59 @@ footer {
         grid-template-columns: repeat(1, 1fr);
     }
 }
+
+/* Adição - Página de Ferramentas */
+/* Caso algo dê errado no resto do site, apagar daqui até o próximo comentário */
+.itens{
+	text-align: justify;
+	text-align-last: center;
+	float: center;
+	margin: 100px;
+	margin-left: 25%;
+	margin-right: 25%;
+}
+.itens ul {
+	list-style-position: inside;
+	padding-left: 0;
+}
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2c3e50;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.team-member p {
+    margin: 5px 0;
+    color: #777;
+    font-size: 0.9em;
+}
+/* Fim da adição */
