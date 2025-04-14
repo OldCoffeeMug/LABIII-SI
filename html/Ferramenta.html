@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ferramentas</title>
+    <link rel="stylesheet" href="st.css">
+</head>
+<body>
+    <header>
+        <img src="img/01.png" alt="Banner de Cybersegurança" class="banner">
+        <img src="img/05.png" alt="Logo Marca" class="logo">
+        <h1>Mundo da Cybersegurança</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="us.html">Equipe</a>
+            <a href="cont.html">Contato</a>
+            <a href="downloads.html">Downloads</a>
+            <button class="menu-button" onclick="toggleSidebar()">&#9776;</button>
+        </nav>
+    </header>
+    <div class="main-content">
+ <div class="sidebar" id="sidebar">
+            <a href="dire.html" class="sidebar-button">NIST</a>
+            <a href="time.html" class="sidebar-button">Timeline de Crimes</a>
+            <a href="Ferramentas.html" class="sidebar-button">Ferramentas</a>
+            <a href="mysql.html" class="sidebar-button">MySQL</a>
+            <a href="framework.html" class="sidebar-button">Framework</a>
+            <a href="cloud.html" class="sidebar-button"> Cloud </a>
+	    <a href="engsocial.html" class="sidebar-button"> Engenharia Social </a>
+	    <a href="cobit.html" class="sidebar-button">COBIT</a>
+            <a href="iso.html" class="sidebar-button">ISO 27001</a>
+		
+        </div>
+        <section id="ferramentas">
+            <h1>Ferramentas de Monitoramento</h1>
+            <div class="itens">
+                <img src="https://i.imgur.com/WC69WQ7.png" alt="Nagios" width="128" height="128" class="thumbs">
+                <h2 class="titulo">Nagios Core</h2>
+                <p class="desc">É uma ferramenta para monitorar os sistemas de TI que integram a infraestrutura,<br>
+                permitindo o controle desde desktops à equipamentos de rede como switches e servidores</p>
+                <h3 class="funcoes">Principais Funções</h3>
+                <ul class="funcoes">
+                    <li>Verificações periódicas de dispositivos críticos</li>
+                    <li>Informações sobre uso de recursos do dispositivo (Disco, RAM, etc.)</li>
+                    <li>Alertas específicos para cada tipo de equipamento</li>
+                </ul>
+                <h3 class="requisitos">Requisitos mínimos de hardware</h3>
+                <ul class="requisitos">
+                    <li>Núcleos de CPU: 1</li>
+                    <li>RAM: 512MB</li>
+                    <li>Armazenamento: 500MB</li>
+                </ul>
+            </div>
+            <div class="itens">
+                <img src="https://i.imgur.com/isrFmsB.png" alt="Zabbix" width="128" height="128" class="thumbs">
+                <h2>Zabbix</h2>
+                <p class="desc">Ferramenta Open-Source para monitoramento da infraestrutura de TI,<br>
+                coleta e exibe métricas básicas de desempenho dos ativos</p>
+                <h3>Funções principais:</h3>
+                <ul class="funcoes">
+                    <li>Além de ativos físicos, também monitora máquinas virtuais</li>
+                    <li>Conta com integração com serviços de nuvem</li>
+                </ul>
+                <h3 class="requisitos">Requisitos recomendados de hardware</h3>
+                <h4 class="requisitos">(Para até 500 hosts)</h4>
+                <ul class="requisitos">
+                    <li>Núcleos de CPU: 2</li>
+                    <li>RAM: 2GB</li>
+                    <li>Armazenamento: 30GB</li>
+                </ul>
+            </div>
+            <div class="itens">
+                <img src="https://i.imgur.com/IbdNiuA.png" alt="Tripwire" width="128" height="128" class="thumbs">
+                <h2>Tripwire</h2>
+                <p class="desc">É um software de segurança e de integridade de dados, que funciona criando um banco<br>
+                de dados inicial e o comparando à eventuais mudanças, que são alertadas aos administradores</p>
+                <h3>Funções principais:</h3>
+                <ul>
+                    <li>Automatiza controles de segurança nos ativos e guia na correção de riscos</li>
+                    <li>Detecta alterações antes que se tornem intrusões</li>
+                </ul>
+                <h3 class="requisitos">Requisitos mínimos de hardware</h3>
+                <ul class="requisitos">
+                    <li>Núcleos de CPU: 2</li>
+                    <li>RAM: 4GB</li>
+                    <li>Armazenamento: 2GB</li>
+                </ul>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2025 Cybersegurança. Todos os direitos reservados.</p>
+    </footer>
+    <script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+
+*  {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+  
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+      text-align: center; 
+  }
+  .topo {
+    background-image: url('Fundo.png');
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    padding-bottom: 0%;
+  }
+  header {
+    position: relative;
+    text-align: right;
+    color: rgba(129, 23, 23, 0);
+    background-color: #000000;
+}
+
+header .logo {
+  position: absolute; 
+  top: -50px; 
+  left: 20%; 
+  transform: translateX(-50%); 
+  width: 600px; 
+  height: auto; 
+}
+
+header h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  padding: 0px;
+  margin: 0;
+  font-size: 2.2em;
+}
+.menu-button {
+  background-color: #245a48;
+  color: white;
+  border: none;
+  padding: 0% 20px;
+  cursor: pointer;
+  font-size: 1.2em;
+  position: absolute;
+  left: 0; 
+  top: 0;
+  height: 100%;
+}
+
+.menu-button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+/* Estilos para a barra lateral */
+.sidebar {
+  height: auto; 
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 60; 
+  left: 0;
+  background-color: #444;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+.sidebar-button {
+  padding: 10px 15px;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  background-color: #093b44;
+  border: none;
+  width: 100%;
+  text-align: left;
+}
+
+.sidebar-button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+header .banner {
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+  .ciber {
+    color: #FFFFFF;
+    font-size: 2.5rem;
+    text-align: right;
+  }
+
+  .titulo {
+    text-align: center;
+    color: #000000;
+  }
+  
+  .resumo {
+    text-align: center;
+    color: #000000;
+  }
+  
+  header p {
+    font-size: 1.2rem;
+    color: #FFFFFF;
+  }
+  
+  nav {
+    background-color: #444444; 
+    padding-top: 10;
+    text-align: center;
+    padding-left: none;
+    padding-right: 70px;
+
+  }
+
+  nav a {
+    text-decoration: none; 
+    color: #FFFFFF; 
+    background-color: #444444; 
+    padding: 10px 20px; 
+    display: inline-block; 
+    transition: 1.5s;
+  }
+  
+  nav a:hover {
+    background-color: #201f1f; 
+    color: #ffffff;
+    transition: 1.5s;
+  }
+  
+  .menu-button:hover {
+    background-color: #ddd;
+    color: black;
+}
+  
+  .banner {
+    height: 200px;
+    background-image: url('img/banner.jpg'); 
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 0px;
+    border-radius: 0px;
+  }
+ /* ==== Estilo para a seção do framework personalizado ==== */
+
+.framework-container {
+  padding: 40px 20px;
+  max-width: 1100px;
+  margin: auto;
+  text-align: center;
+}
+
+.framework-container h2 {
+  font-size: 2.5rem;
+  color: #093b44;
+  margin-bottom: 30px;
+}
+
+.framework-img {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto 40px auto;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+  transition: transform 0.3s ease;
+}
+
+.framework-img:hover {
+  transform: scale(1.02);
+}
+
+.framework-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+
+.framework-card {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  width: 280px;
+  min-height: 200px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+  transition: all 0.3s ease-in-out;
+  cursor: default;
+}
+
+.framework-card:hover {
+  background-color: #245a48;
+  color: #fff;
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.framework-card i {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: #245a48;
+  transition: color 0.3s ease;
+}
+
+.framework-card:hover i {
+  color: #ffffff;
+}
+
+.framework-card h3 {
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.framework-card p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+ 
+  

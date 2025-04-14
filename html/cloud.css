@@ -1,0 +1,230 @@
+/* Reset e estilo base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  text-align: center;
+}
+
+header {
+  background-color: #000;
+  color: white;
+  position: relative;
+  text-align: right;
+}
+
+header .logo {
+  position: absolute;
+  top: -50px;
+  left: 20%;
+  transform: translateX(-50%);
+  width: 600px;
+  height: auto;
+}
+
+header h1 {
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  transform: translateY(-50%);
+  margin: 0;
+  font-size: 2.2em;
+}
+
+.banner {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.menu-button {
+  background-color: #245a48;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 1.2em;
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+}
+
+.menu-button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #444;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  background-color: #444;
+  padding: 14px 20px;
+  display: inline-block;
+  transition: 0.5s;
+}
+
+nav a:hover {
+  background-color: #201f1f;
+  color: white;
+}
+
+.sidebar {
+  width: 0px;
+  height: auto;
+  position: absolute;
+  z-index: 1;
+  top: 260px;
+  left: 0;
+  background-color: #444;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 20px;
+}
+
+.sidebar-button {
+  padding: 10px 15px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 1.2em;
+  color: white;
+  display: block;
+  transition: 0.3s;
+  background-color: #093b44;
+  border: none;
+  width: 100%;
+}
+
+.sidebar-button:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Seções especiais */
+.hero {
+  background-color: #e8f0fe;
+  padding: 40px 20px;
+  border-radius: 12px;
+  margin: 20px;
+}
+
+.hero h2 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+.cards-section, .practices-section, .shared-responsibility, .cta {
+  margin: 40px 20px;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.card {
+  background-color: #ffffff;
+  border-radius: 16px;
+  padding: 20px;
+  width: 300px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card .icon {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #245a48;
+}
+
+.checklist {
+  list-style: none;
+  text-align: left;
+  max-width: 600px;
+  margin: auto;
+  padding-left: 0;
+}
+
+.checklist li {
+  margin: 10px 0;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+}
+
+.checklist i {
+  margin-right: 10px;
+  color: #2b9348;
+}
+
+.responsibility-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.responsibility-card {
+  background-color: #e3f2fd;
+  border-radius: 16px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-align: left;
+}
+
+.cta {
+  background-color: #245a48;
+  color: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin: 40px 20px;
+}
+
+.button-link {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #ffffff;
+  color: #245a48;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.button-link:hover {
+  background-color: #ddd;
+}
+
+footer {
+  background-color: #222;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}

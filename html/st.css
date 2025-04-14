@@ -1,0 +1,294 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: center; /* Alinha o conteúdo da página no centro */
+}
+
+header {
+    position: relative;
+    text-align: right;
+    color: rgba(255, 255, 255, 0);
+    background-color: #000000;
+}
+
+header .banner {
+    position: relative;
+    width: 100%;
+    height: 210px;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    margin-bottom: 0px;
+}
+
+header .logo {
+    position: absolute; /* Faz a imagem flutuar sobre o banner */
+    top: -50px; /* Distância do topo do banner */
+    left: 20%; /* Centraliza a imagem horizontalmente */
+    transform: translateX(-50%); /* Ajusta o alinhamento exato */
+    width: 600px; /* Define o tamanho menor */
+    height: auto; /* Mantém a proporção */
+}
+
+header h1 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+    padding: 0px;
+    margin: 0;
+    font-size: 2.2em;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #444;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+
+nav a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.menu-button {
+    background-color: #245a48;
+    color: white;
+    border: none;
+    padding: 0% 20px;
+    cursor: pointer;
+    font-size: 1.2em;
+    position: absolute;
+    left: 0; /* Move o botão para o canto esquerdo */
+    top: 0;
+    height: 100%;
+}
+
+.menu-button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Estilos para a barra lateral */
+.sidebar {
+    height: auto; /* Ajusta a altura para cobrir toda a tela */
+    width: 0;
+    position: absolute; /* Altera para fixed para que a barra lateral fique fixa na tela */
+    z-index: 1;
+    top: 0; /* Ajusta a posição para não cobrir o header */
+    left: 0;
+    background-color: #444;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px; /* Ajusta o padding para não cobrir a barra de navegação */
+}
+
+.sidebar-button {
+    padding: 10px 15px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2em;
+    color: white;
+    display: block;
+    transition: 0.3s;
+    background-color: #093b44;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+
+.sidebar-button:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.main-content {
+    display: flex;
+    position: relative;
+    justify-content: center; /* Alinha o conteúdo da página no centro */
+    padding-top: 60px; /* Adiciona padding para não cobrir a barra de navegação */
+}
+
+.content-block {
+    display: flex;
+    align-items: center;
+    padding: 20px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border-bottom: 1px solid #ddd;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.content-block.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.content-block:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.content-image {
+    width: 50%;
+    height: auto;
+    margin: 0 20px; /* Ajusta a margem para ambos os lados */
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content-text {
+    width: 50%;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left; /* Alinha o texto à esquerda */
+    transition: transform 0.3s ease; /* Adiciona transição para o efeito de zoom */
+}
+
+.content-text:hover {
+    transform: scale(1.05); /* Aplica o efeito de zoom */
+}
+
+.content-text h2 {
+    font-size: 1.8em;
+    margin-top: 0;
+}
+
+.content-text p {
+    line-height: 1.6;
+}
+
+footer {
+    background-color: #33333300;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+.thumbs {
+    float: left;
+    margin-right: 30px;
+    margin-left: 30px;
+}
+
+.desc {
+    float: left;
+    text-align: left;
+    margin-right: 100px;
+}
+
+.requisitos {
+    text-align: left;
+    line-height: 1.3;
+    margin-left: 190px;
+    list-style-type: none;
+}
+
+.requisitos ul li {
+    border-left: 3px solid;
+}
+
+.itens {
+    border: 3px solid #2c3e50;
+    border-radius: 16px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 50px;
+    padding-top: 30px;
+    background-color: white;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .team {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 480px) {
+    .team {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+/* Adição - Página de Ferramentas */
+/* Caso algo dê errado no resto do site, apagar daqui até o próximo comentário */
+.itens{
+    text-align: right;
+    text-align-last: left;
+    float: center;
+    margin: 100px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+.itens ul {
+    list-style-position: inside;
+    padding-left: 0;
+
+}
+.team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-member {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+}
+
+.team-member img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #2c3e50;
+}
+
+.team-member h3 {
+    margin: 10px 0 5px;
+    color: #333;
+}
+
+.team-member p {
+    margin: 5px 0;
+    color: #777;
+    font-size: 0.9em;
+}
+/* Fim da adição */
